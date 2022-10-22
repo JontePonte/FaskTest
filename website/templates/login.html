@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h1>This is the login page!</h1>
+<p>{{ text }}</p>
+
+<!-- This is an if/else in JENGA -->
+{% if boolean == True %}
+<p>The variable is true</p>
+{% else %}
+<p>The variable is not true</p>
+{% endif %}
+
+{% endblock %}
