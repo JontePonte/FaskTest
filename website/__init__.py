@@ -18,9 +18,9 @@ def create_app():
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
+    # create/initiate database
     from .models import User, Note
 
-    # create database
     with app.app_context():
         db.create_all()
 
